@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E136A5C27F61A55004C4DDA /* TarefaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E136A5B27F61A55004C4DDA /* TarefaModel.swift */; };
+		7E136A5E27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E136A5D27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift */; };
+		7EA2C2BD27F4CF4000286A04 /* TarefaCoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2C2BC27F4CF4000286A04 /* TarefaCoreDataViewController.swift */; };
+		7EA2C2BF27F4F05500286A04 /* TarefaCoreDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2C2BE27F4F05500286A04 /* TarefaCoreDateUtil.swift */; };
+		7EBDE76F27F225E000A64730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE76E27F225E000A64730 /* AppDelegate.swift */; };
+		7EBDE77127F225E000A64730 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE77027F225E000A64730 /* SceneDelegate.swift */; };
+		7EBDE77327F225E000A64730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE77227F225E000A64730 /* ViewController.swift */; };
+		7EBDE77627F225E000A64730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDE77427F225E000A64730 /* Main.storyboard */; };
+		7EBDE77927F225E000A64730 /* ProjetoTarefas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE77727F225E000A64730 /* ProjetoTarefas.xcdatamodeld */; };
+		7EBDE77B27F225E100A64730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDE77A27F225E100A64730 /* Assets.xcassets */; };
+		7EBDE77E27F225E100A64730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDE77C27F225E100A64730 /* LaunchScreen.storyboard */; };
+		7EBDE78927F225E100A64730 /* ProjetoTarefasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE78827F225E100A64730 /* ProjetoTarefasTests.swift */; };
+		7EBDE79327F225E100A64730 /* ProjetoTarefasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE79227F225E100A64730 /* ProjetoTarefasUITests.swift */; };
+		7EBDE79527F225E100A64730 /* ProjetoTarefasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE79427F225E100A64730 /* ProjetoTarefasUITestsLaunchTests.swift */; };
+		7EBDE7A227F229D200A64730 /* ListarTarefasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE7A127F229D200A64730 /* ListarTarefasTableViewController.swift */; };
+		7EBDE7A427F23AD500A64730 /* AddTarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE7A327F23AD500A64730 /* AddTarefaViewController.swift */; };
+		7EBDE7AA27F24A1600A64730 /* TarefaUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDE7A927F24A1600A64730 /* TarefaUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EBDE78527F225E100A64730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EBDE76327F225E000A64730 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EBDE76A27F225E000A64730;
+			remoteInfo = ProjetoTarefas;
+		};
+		7EBDE78F27F225E100A64730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EBDE76327F225E000A64730 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EBDE76A27F225E000A64730;
+			remoteInfo = ProjetoTarefas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E136A5B27F61A55004C4DDA /* TarefaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaModel.swift; sourceTree = "<group>"; };
+		7E136A5D27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaredaCoreDataViewController.swift; sourceTree = "<group>"; };
+		7EA2C2BC27F4CF4000286A04 /* TarefaCoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaCoreDataViewController.swift; sourceTree = "<group>"; };
+		7EA2C2BE27F4F05500286A04 /* TarefaCoreDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaCoreDateUtil.swift; sourceTree = "<group>"; };
+		7EBDE76B27F225E000A64730 /* ProjetoTarefas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoTarefas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBDE76E27F225E000A64730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EBDE77027F225E000A64730 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7EBDE77227F225E000A64730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EBDE77527F225E000A64730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EBDE77827F225E000A64730 /* ProjetoTarefas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjetoTarefas.xcdatamodel; sourceTree = "<group>"; };
+		7EBDE77A27F225E100A64730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EBDE77D27F225E100A64730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EBDE77F27F225E100A64730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EBDE78427F225E100A64730 /* ProjetoTarefasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoTarefasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBDE78827F225E100A64730 /* ProjetoTarefasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTarefasTests.swift; sourceTree = "<group>"; };
+		7EBDE78E27F225E100A64730 /* ProjetoTarefasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoTarefasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBDE79227F225E100A64730 /* ProjetoTarefasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTarefasUITests.swift; sourceTree = "<group>"; };
+		7EBDE79427F225E100A64730 /* ProjetoTarefasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTarefasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EBDE7A127F229D200A64730 /* ListarTarefasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarTarefasTableViewController.swift; sourceTree = "<group>"; };
+		7EBDE7A327F23AD500A64730 /* AddTarefaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTarefaViewController.swift; sourceTree = "<group>"; };
+		7EBDE7A927F24A1600A64730 /* TarefaUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EBDE76827F225E000A64730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDE78127F225E100A64730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDE78B27F225E100A64730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EBDE76227F225E000A64730 = {
+			isa = PBXGroup;
+			children = (
+				7EBDE76D27F225E000A64730 /* ProjetoTarefas */,
+				7EBDE78727F225E100A64730 /* ProjetoTarefasTests */,
+				7EBDE79127F225E100A64730 /* ProjetoTarefasUITests */,
+				7EBDE76C27F225E000A64730 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EBDE76C27F225E000A64730 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EBDE76B27F225E000A64730 /* ProjetoTarefas.app */,
+				7EBDE78427F225E100A64730 /* ProjetoTarefasTests.xctest */,
+				7EBDE78E27F225E100A64730 /* ProjetoTarefasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EBDE76D27F225E000A64730 /* ProjetoTarefas */ = {
+			isa = PBXGroup;
+			children = (
+				7EBDE76E27F225E000A64730 /* AppDelegate.swift */,
+				7EBDE77027F225E000A64730 /* SceneDelegate.swift */,
+				7EBDE77227F225E000A64730 /* ViewController.swift */,
+				7EBDE77427F225E000A64730 /* Main.storyboard */,
+				7EBDE77A27F225E100A64730 /* Assets.xcassets */,
+				7EBDE77C27F225E100A64730 /* LaunchScreen.storyboard */,
+				7EBDE77F27F225E100A64730 /* Info.plist */,
+				7EBDE77727F225E000A64730 /* ProjetoTarefas.xcdatamodeld */,
+				7EBDE7A127F229D200A64730 /* ListarTarefasTableViewController.swift */,
+				7EBDE7A327F23AD500A64730 /* AddTarefaViewController.swift */,
+				7EBDE7A927F24A1600A64730 /* TarefaUtil.swift */,
+				7EA2C2BC27F4CF4000286A04 /* TarefaCoreDataViewController.swift */,
+				7EA2C2BE27F4F05500286A04 /* TarefaCoreDateUtil.swift */,
+				7E136A5B27F61A55004C4DDA /* TarefaModel.swift */,
+				7E136A5D27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift */,
+			);
+			path = ProjetoTarefas;
+			sourceTree = "<group>";
+		};
+		7EBDE78727F225E100A64730 /* ProjetoTarefasTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EBDE78827F225E100A64730 /* ProjetoTarefasTests.swift */,
+			);
+			path = ProjetoTarefasTests;
+			sourceTree = "<group>";
+		};
+		7EBDE79127F225E100A64730 /* ProjetoTarefasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7EBDE79227F225E100A64730 /* ProjetoTarefasUITests.swift */,
+				7EBDE79427F225E100A64730 /* ProjetoTarefasUITestsLaunchTests.swift */,
+			);
+			path = ProjetoTarefasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EBDE76A27F225E000A64730 /* ProjetoTarefas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBDE79827F225E100A64730 /* Build configuration list for PBXNativeTarget "ProjetoTarefas" */;
+			buildPhases = (
+				7EBDE76727F225E000A64730 /* Sources */,
+				7EBDE76827F225E000A64730 /* Frameworks */,
+				7EBDE76927F225E000A64730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjetoTarefas;
+			productName = ProjetoTarefas;
+			productReference = 7EBDE76B27F225E000A64730 /* ProjetoTarefas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EBDE78327F225E100A64730 /* ProjetoTarefasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBDE79B27F225E100A64730 /* Build configuration list for PBXNativeTarget "ProjetoTarefasTests" */;
+			buildPhases = (
+				7EBDE78027F225E100A64730 /* Sources */,
+				7EBDE78127F225E100A64730 /* Frameworks */,
+				7EBDE78227F225E100A64730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EBDE78627F225E100A64730 /* PBXTargetDependency */,
+			);
+			name = ProjetoTarefasTests;
+			productName = ProjetoTarefasTests;
+			productReference = 7EBDE78427F225E100A64730 /* ProjetoTarefasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EBDE78D27F225E100A64730 /* ProjetoTarefasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBDE79E27F225E100A64730 /* Build configuration list for PBXNativeTarget "ProjetoTarefasUITests" */;
+			buildPhases = (
+				7EBDE78A27F225E100A64730 /* Sources */,
+				7EBDE78B27F225E100A64730 /* Frameworks */,
+				7EBDE78C27F225E100A64730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EBDE79027F225E100A64730 /* PBXTargetDependency */,
+			);
+			name = ProjetoTarefasUITests;
+			productName = ProjetoTarefasUITests;
+			productReference = 7EBDE78E27F225E100A64730 /* ProjetoTarefasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EBDE76327F225E000A64730 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7EBDE76A27F225E000A64730 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					7EBDE78327F225E100A64730 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 7EBDE76A27F225E000A64730;
+					};
+					7EBDE78D27F225E100A64730 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 7EBDE76A27F225E000A64730;
+					};
+				};
+			};
+			buildConfigurationList = 7EBDE76627F225E000A64730 /* Build configuration list for PBXProject "ProjetoTarefas" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EBDE76227F225E000A64730;
+			productRefGroup = 7EBDE76C27F225E000A64730 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EBDE76A27F225E000A64730 /* ProjetoTarefas */,
+				7EBDE78327F225E100A64730 /* ProjetoTarefasTests */,
+				7EBDE78D27F225E100A64730 /* ProjetoTarefasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EBDE76927F225E000A64730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBDE77E27F225E100A64730 /* LaunchScreen.storyboard in Resources */,
+				7EBDE77B27F225E100A64730 /* Assets.xcassets in Resources */,
+				7EBDE77627F225E000A64730 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDE78227F225E100A64730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDE78C27F225E100A64730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EBDE76727F225E000A64730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBDE77927F225E000A64730 /* ProjetoTarefas.xcdatamodeld in Sources */,
+				7EBDE7A427F23AD500A64730 /* AddTarefaViewController.swift in Sources */,
+				7EA2C2BD27F4CF4000286A04 /* TarefaCoreDataViewController.swift in Sources */,
+				7EBDE7A227F229D200A64730 /* ListarTarefasTableViewController.swift in Sources */,
+				7EA2C2BF27F4F05500286A04 /* TarefaCoreDateUtil.swift in Sources */,
+				7E136A5E27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift in Sources */,
+				7EBDE77327F225E000A64730 /* ViewController.swift in Sources */,
+				7EBDE76F27F225E000A64730 /* AppDelegate.swift in Sources */,
+				7EBDE77127F225E000A64730 /* SceneDelegate.swift in Sources */,
+				7E136A5C27F61A55004C4DDA /* TarefaModel.swift in Sources */,
+				7EBDE7AA27F24A1600A64730 /* TarefaUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDE78027F225E100A64730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBDE78927F225E100A64730 /* ProjetoTarefasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBDE78A27F225E100A64730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBDE79327F225E100A64730 /* ProjetoTarefasUITests.swift in Sources */,
+				7EBDE79527F225E100A64730 /* ProjetoTarefasUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EBDE78627F225E100A64730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EBDE76A27F225E000A64730 /* ProjetoTarefas */;
+			targetProxy = 7EBDE78527F225E100A64730 /* PBXContainerItemProxy */;
+		};
+		7EBDE79027F225E100A64730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EBDE76A27F225E000A64730 /* ProjetoTarefas */;
+			targetProxy = 7EBDE78F27F225E100A64730 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EBDE77427F225E000A64730 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBDE77527F225E000A64730 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EBDE77C27F225E100A64730 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBDE77D27F225E100A64730 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EBDE79627F225E100A64730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EBDE79727F225E100A64730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EBDE79927F225E100A64730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjetoTarefas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.brq.ProjetoTarefas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EBDE79A27F225E100A64730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjetoTarefas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.brq.ProjetoTarefas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EBDE79C27F225E100A64730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.brq.ProjetoTarefasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjetoTarefas.app/ProjetoTarefas";
+			};
+			name = Debug;
+		};
+		7EBDE79D27F225E100A64730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.brq.ProjetoTarefasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjetoTarefas.app/ProjetoTarefas";
+			};
+			name = Release;
+		};
+		7EBDE79F27F225E100A64730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.brq.ProjetoTarefasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProjetoTarefas;
+			};
+			name = Debug;
+		};
+		7EBDE7A027F225E100A64730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.brq.ProjetoTarefasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProjetoTarefas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EBDE76627F225E000A64730 /* Build configuration list for PBXProject "ProjetoTarefas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBDE79627F225E100A64730 /* Debug */,
+				7EBDE79727F225E100A64730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBDE79827F225E100A64730 /* Build configuration list for PBXNativeTarget "ProjetoTarefas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBDE79927F225E100A64730 /* Debug */,
+				7EBDE79A27F225E100A64730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBDE79B27F225E100A64730 /* Build configuration list for PBXNativeTarget "ProjetoTarefasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBDE79C27F225E100A64730 /* Debug */,
+				7EBDE79D27F225E100A64730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBDE79E27F225E100A64730 /* Build configuration list for PBXNativeTarget "ProjetoTarefasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBDE79F27F225E100A64730 /* Debug */,
+				7EBDE7A027F225E100A64730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7EBDE77727F225E000A64730 /* ProjetoTarefas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7EBDE77827F225E000A64730 /* ProjetoTarefas.xcdatamodel */,
+			);
+			currentVersion = 7EBDE77827F225E000A64730 /* ProjetoTarefas.xcdatamodel */;
+			path = ProjetoTarefas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7EBDE76327F225E000A64730 /* Project object */;
+}
