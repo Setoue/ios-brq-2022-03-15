@@ -92,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EB4FDB827F777800043B874 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7E136A5D27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift */,
+				7EA2C2BC27F4CF4000286A04 /* TarefaCoreDataViewController.swift */,
+				7EA2C2BE27F4F05500286A04 /* TarefaCoreDateUtil.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		7EBDE76227F225E000A64730 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		7EBDE76D27F225E000A64730 /* ProjetoTarefas */ = {
 			isa = PBXGroup;
 			children = (
+				7EB4FDB827F777800043B874 /* CoreData */,
 				7EBDE76E27F225E000A64730 /* AppDelegate.swift */,
 				7EBDE77027F225E000A64730 /* SceneDelegate.swift */,
 				7EBDE77227F225E000A64730 /* ViewController.swift */,
@@ -126,10 +137,7 @@
 				7EBDE7A127F229D200A64730 /* ListarTarefasTableViewController.swift */,
 				7EBDE7A327F23AD500A64730 /* AddTarefaViewController.swift */,
 				7EBDE7A927F24A1600A64730 /* TarefaUtil.swift */,
-				7EA2C2BC27F4CF4000286A04 /* TarefaCoreDataViewController.swift */,
-				7EA2C2BE27F4F05500286A04 /* TarefaCoreDateUtil.swift */,
 				7E136A5B27F61A55004C4DDA /* TarefaModel.swift */,
-				7E136A5D27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift */,
 			);
 			path = ProjetoTarefas;
 			sourceTree = "<group>";

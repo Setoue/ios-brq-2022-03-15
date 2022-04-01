@@ -66,15 +66,42 @@ class TarefaCoreDateUtil: UITableViewController{
         
         return context
     }
-    func deletar(index: Int, lista: [TarefaModel]) -> [TarefaModel]{
-        var tarefas = lista
-        print(tarefas)
-        print(index)
-        tarefas.remove(at: index)
-        return tarefas
+    //MARK: -Deletar dados
+    func deletar(index: Int) {
+        let context = getContext()
+        let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Tarefa")
         
-//        
-//        UserDefaults.standard.setValue(tarefas, forKey: chave)
+        do{
+            //buscar todos os registros do core data do tipo NSManagedObject
+            let tarefasConsuta = try context.fetch(requisicao) as! [NSManagedObject]
+            
+            //deletar do contexto apenas o  registro com o indece do parametro (array definido na linha anterior)
+            try context.delete(tarefasConsuta[index])
+            
+            //atualiza o contexto
+            try context.save()
+        }catch{
+            print("Ërro ao remover tarefa")
+        }
+
         
+    }
+    //MARK: - Editar dados
+    func editar(index: Int, novaTarefa: String){
+        let context = getContext()
+        let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Tarefa")
+        
+        do{
+            //buscar todos os registros do core data do tipo NSManagedObject
+            let tarefasConsuta = try context.fetch(requisicao) as! [NSManagedObject]
+            
+            //editar apenas o registro com o indice que de desejo da edicao (altera apenas o atributo em questao)
+            tarefasConsuta[index].setValue(novaTarefa, forKey: "descricao")
+            
+            //atualiza o contexto
+            try context.save()
+        }catch{
+            print("Ërro ao editar tarefa")
+        }
     }
 }

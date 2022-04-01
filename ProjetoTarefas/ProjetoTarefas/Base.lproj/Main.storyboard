@@ -74,7 +74,7 @@
                     <navigationItem key="navigationItem" id="vmQ-DP-pLk">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus.circle.fill" catalog="system" id="Pok-WD-rW6">
                             <connections>
-                                <segue destination="E7O-xk-QDG" kind="show" id="Lxh-ov-xDa"/>
+                                <segue destination="E7O-xk-QDG" kind="show" identifier="listarParaAddTarefaCoreDataSegue" id="Lxh-ov-xDa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -124,7 +124,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="oFF-zf-Uht"/>
                     <connections>
+                        <outlet property="botaoCoreDataOutlet" destination="gNH-T1-oGE" id="0kw-8h-XGz"/>
                         <outlet property="coreDataTextView" destination="Cgu-gS-6Bu" id="aM4-jH-xQS"/>
+                        <outlet property="textLabel" destination="Xnh-AB-x78" id="swY-UH-GxI"/>
+                        <outlet property="textViewCoreData" destination="Cgu-gS-6Bu" id="MmM-V2-UAt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZG-a5-o4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

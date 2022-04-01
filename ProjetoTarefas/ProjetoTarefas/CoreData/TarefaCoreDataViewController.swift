@@ -19,7 +19,8 @@ class TarefaCoreDataViewController : UITableViewController{
         listarTarefaModel = tarefaCoreData.listar()
         
     }
-    
+        
+        
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -37,18 +38,36 @@ class TarefaCoreDataViewController : UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "listarParaAddTarefaCoreDataSegue", sender: indexPath.row)
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if segue.identifier == "listarParaAddTarefaCoreDataSegue"{
+            
+            let destinoControlador = segue.destination as! AddTaredaCoreDataViewController
+            
+            guard let i = sender as? Int else{ return }
+            destinoControlador.indexTarefa = i
+            
+            
+            
+        }
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let tarefa = TarefaCoreDateUtil()
-            listarTarefaModel = tarefa.deletar(index: indexPath.row, lista: listarTarefaModel)
             
-//            listarTarefaModel = tarefaCoreData.listar()
+            tarefa.deletar(index: indexPath.row)
+            listarTarefaModel = tarefa.listar()
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+    
+    //MARK: -did Select Rows
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//    }
 }

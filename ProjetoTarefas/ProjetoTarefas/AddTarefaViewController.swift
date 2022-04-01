@@ -41,6 +41,7 @@ class AddTarefaViewController: UIViewController {
             tarefaU.salvar(novaTarefa:  textView.text!)
         }
         navigationController?.popViewController(animated:true)
+        
     }
 
     //MARK: - Depois que a view foi carregada
