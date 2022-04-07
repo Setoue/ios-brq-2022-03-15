@@ -95,6 +95,7 @@
 		7EB4FDB827F777800043B874 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				7E136A5B27F61A55004C4DDA /* TarefaModel.swift */,
 				7E136A5D27F633A2004C4DDA /* AddTaredaCoreDataViewController.swift */,
 				7EA2C2BC27F4CF4000286A04 /* TarefaCoreDataViewController.swift */,
 				7EA2C2BE27F4F05500286A04 /* TarefaCoreDateUtil.swift */,
@@ -137,7 +138,6 @@
 				7EBDE7A127F229D200A64730 /* ListarTarefasTableViewController.swift */,
 				7EBDE7A327F23AD500A64730 /* AddTarefaViewController.swift */,
 				7EBDE7A927F24A1600A64730 /* TarefaUtil.swift */,
-				7E136A5B27F61A55004C4DDA /* TarefaModel.swift */,
 			);
 			path = ProjetoTarefas;
 			sourceTree = "<group>";

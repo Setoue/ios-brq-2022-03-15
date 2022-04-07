@@ -33,15 +33,29 @@ class TarefaCoreDataViewController : UITableViewController{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "coreReuso", for: indexPath)
         cell.textLabel?.text = listarTarefaModel[indexPath.row].descricao //náo quero o objeto e sim o atibuto descricao
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(detalhesFilmes(_:)))
+        cell.addGestureRecognizer(longPress)
         return cell
     }
+    @objc func detalhesFilmes(_ gesture: UITapGestureRecognizer){
+        if gesture.state == .began{
+            let viewCell = gesture.view as! UITableViewCell
+            guard let indexPath = tableView.indexPath(for: viewCell) else{ return }
+            
+            lis
+        }
+    }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "listarParaAddTarefaCoreDataSegue", sender: indexPath.row)
         
+     
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "listarParaAddTarefaCoreDataSegue"{
@@ -55,6 +69,7 @@ class TarefaCoreDataViewController : UITableViewController{
             
         }
     }
+    
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

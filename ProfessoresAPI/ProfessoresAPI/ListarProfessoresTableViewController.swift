@@ -65,7 +65,8 @@ class ListarProfessoresTableViewController: UITableViewController {
         return cell
     }
     
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -74,17 +75,60 @@ class ListarProfessoresTableViewController: UITableViewController {
     }
     */
 
-    /*
+    //MARK: - Selecionar e deletar
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            // Pega o id (API) que queremos deletar
+            let id = professores[indexPath.row].id!
+            // montar a URK que devemos fazer a requisicao
+            let urlStr = "https://cors.grandeporte.com.br/cursos.grandeporte.com.br:8080/professores/\(id)"
+            let url = URL(string :urlStr)!
+            
+            var requisicao = URLRequest(url: url)
+            requisicao.httpMethod = "DELETE"
+            
+            requisicao.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            //cria tarefa assincrona que permite fazer a requisicao a API
+            let tarefa = URLSession.shared.dataTask(with: requisicao){
+                (dados, resposta, erro) in
+                //se nao houver erros, removesmos o professor do array e depois da tablea (tela)
+                if (erro == nil){
+                    print("Professor criado com sucesso")
+                    self.professores.remove(at: indexPath.row)
+                    // Delete the row from the data source
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+                } else {
+                    print("Erro ao criar o professor")
+                }
+            }
+            tarefa.resume()
+            
+        }
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+                //pegando o professor que gostariamos de alterar
+        let professorAlterado = professores[indexPath.row]
+        performSegue(withIdentifier: "reuseIdentifier", sender: professorAlterado)
+
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "reuseIdentifier"{
+            
+            let destinoControlador = segue.destination as! ViewController
+            
+            guard let i = sender as? ProfessorModel else{ return }
+            
+            destinoControlador.professorAlterado = i
+        }
+    }
 
     /*
     // Override to support rearranging the table view.

@@ -57,6 +57,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kJx-kD-cfR"/>
                     <connections>
+                        <outlet property="botaoOutLet" destination="jaK-gu-oAG" id="T5o-rl-3d4"/>
                         <outlet property="textEmail" destination="xG8-kG-uLw" id="Kdh-VP-NYE"/>
                         <outlet property="textNome" destination="VpG-Z3-MJj" id="E2R-dU-x5H"/>
                     </connections>
@@ -91,7 +92,7 @@
                     <navigationItem key="navigationItem" title="Professores" id="iDn-4c-4QO">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus.app.fill" catalog="system" id="Au4-Ue-H9s">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="XCe-UH-t9M"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="reuseIdentifier" id="XCe-UH-t9M"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
